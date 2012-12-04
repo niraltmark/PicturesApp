@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SYW.App.Pictures", "SYW.App.Pictures\SYW.App.Pictures.csproj", "{4228FD66-C6AC-4393-8724-46330815A2CF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SYW.App.Pictures.Domain", "SYW.App.Pictures.Domain\SYW.App.Pictures.Domain.csproj", "{BDC1908B-D438-4852-8106-5C9792D5424C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mongo", "Mongo\Mongo.csproj", "{464816AC-54F4-472B-BE93-4117D3A14468}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +17,14 @@ Global
 		{4228FD66-C6AC-4393-8724-46330815A2CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4228FD66-C6AC-4393-8724-46330815A2CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4228FD66-C6AC-4393-8724-46330815A2CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDC1908B-D438-4852-8106-5C9792D5424C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDC1908B-D438-4852-8106-5C9792D5424C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDC1908B-D438-4852-8106-5C9792D5424C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDC1908B-D438-4852-8106-5C9792D5424C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{464816AC-54F4-472B-BE93-4117D3A14468}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{464816AC-54F4-472B-BE93-4117D3A14468}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{464816AC-54F4-472B-BE93-4117D3A14468}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{464816AC-54F4-472B-BE93-4117D3A14468}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

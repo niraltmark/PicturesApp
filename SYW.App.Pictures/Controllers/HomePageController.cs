@@ -11,5 +11,11 @@ namespace SYW.App.Pictures.Controllers
 		{
 			return Content("Welcome to my products and I");
 		}
+
+		[PatternRoute("/post-login")]
+		public ActionResult PostLogin()
+		{
+			return Content("Yes");
+		}
 	}
 }

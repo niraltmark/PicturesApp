@@ -10,3 +10,11 @@ C:\Dev\PicturesApp\SYW.App.Pictures\bin\log4net.dll
 C:\Dev\PicturesApp\SYW.App.Pictures\bin\Castle.Facilities.Logging.dll
 C:\Dev\PicturesApp\SYW.App.Pictures\bin\log4net.xml
 C:\Dev\PicturesApp\SYW.App.Pictures\bin\Castle.Facilities.Logging.xml
+C:\Dev\PicturesApp\SYW.App.Pictures\bin\MongoDB.Bson.dll
+C:\Dev\PicturesApp\SYW.App.Pictures\bin\MongoDB.Driver.dll
+C:\Dev\PicturesApp\SYW.App.Pictures\bin\Newtonsoft.Json.dll
+C:\Dev\PicturesApp\SYW.App.Pictures\bin\SYW.App.Pictures.Domain.dll
+C:\Dev\PicturesApp\SYW.App.Pictures\bin\Mongo.dll
+C:\Dev\PicturesApp\SYW.App.Pictures\bin\SYW.App.Pictures.Domain.pdb
+C:\Dev\PicturesApp\SYW.App.Pictures\bin\Newtonsoft.Json.xml
+C:\Dev\PicturesApp\SYW.App.Pictures\bin\Mongo.pdb

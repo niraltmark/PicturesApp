@@ -7,7 +7,13 @@ using System.Web.Routing;
 using CommonGround;
 using CommonGround.MvcInvocation;
 using CommonGround.Settings;
+using Mongo;
+using SYW.App.Pictures.Domain.Entities;
+using SYW.App.Pictures.Domain.Settings;
 using SYW.App.Pictures.Filters;
+using log4net;
+using log4net.Config;
+using log4net.Core;
 
 namespace SYW.App.Pictures.Config
 {
@@ -26,16 +32,16 @@ namespace SYW.App.Pictures.Config
 			_currentAssembly = Assembly.GetExecutingAssembly();
 			_assemblies = new[]
 			{
-			    _currentAssembly 
-				//typeof (ILogger).Assembly,
-				//typeof (Conversation).Assembly
+			    _currentAssembly, 
+				typeof (ILogger).Assembly,
+				typeof (Entity).Assembly
 			};
 		}
 
 		public void RegisterEverything()
 		{
-			//RegisterMongoDb();
-			//InitializeLogger();
+			RegisterMongoDb();
+			InitializeLogger();
 			RegisterDefaultInterfaces();
 			RegisterSettingsManager();
 			RegisterEvents();
@@ -68,31 +74,31 @@ namespace SYW.App.Pictures.Config
 
 		public void RegisterSettingsManager()
 		{
-			//var appSettings = _container.Resolve<IMongoStorage<SettingValue>>();
-			//_settingsManager = new SettingsManager(_container, () => appSettings.GetAll().ToDictionary(x => x.Section + "." + x.Key, x => x.Value));
-			//_settingsManager.RegisterSettings(new[] { _currentAssembly, typeof(Conversation).Assembly });
+			var appSettings = _container.Resolve<IMongoStorage<SettingValue>>();
+			_settingsManager = new SettingsManager(_container, () => appSettings.GetAll().ToDictionary(x => x.Section + "." + x.Key, x => x.Value));
+			_settingsManager.RegisterSettings(new[] { _currentAssembly, typeof(Entity).Assembly });
 		}
 
 		public void RegisterMongoDb()
 		{
-			//_container.RegisterTypes(new Dictionary<Type, Type> { { typeof(IMongoStorage<>), typeof(MongoStorage<>) } });
+			_container.RegisterTypes(new Dictionary<Type, Type> { { typeof(IMongoStorage<>), typeof(MongoStorage<>) } });
 
-			//if (MongoAppHarborDatabaseProvider.IsViaAppHarbor)
-			//{
-			//    _container.RegisterInstance<IMongoDatabaseProvider>(new MongoAppHarborDatabaseProvider());
-			//    return;
-			//}
+			if (MongoAppHarborDatabaseProvider.IsViaAppHarbor)
+			{
+				_container.RegisterInstance<IMongoDatabaseProvider>(new MongoAppHarborDatabaseProvider());
+				return;
+			}
 
-			//_container.RegisterInstance<IMongoServerProvider>(new MongoServerProvider());
-			//_container.RegisterTypes(new Dictionary<Type, Type> { { typeof(IMongoDatabaseProvider), typeof(MongoDatabaseProvider) } });
+			_container.RegisterInstance<IMongoServerProvider>(new MongoServerProvider());
+			_container.RegisterTypes(new Dictionary<Type, Type> { { typeof(IMongoDatabaseProvider), typeof(MongoDatabaseProvider) } });
 		}
 
 		public void InitializeLogger()
 		{
-			//var log = LogManager.GetLogger(typeof(MvcApplication));
-			//XmlConfigurator.Configure();
+			var log = LogManager.GetLogger(typeof(MvcApplication));
+			XmlConfigurator.Configure();
 
-			//_container.RegisterInstance(log);
+			_container.RegisterInstance(log);
 		}
 
 		public void RegisterGlobalFilters()
