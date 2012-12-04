@@ -1,0 +1,14 @@
+C:\Dev\PicturesApp\SYW.App.Pictures\bin\SYW.App.Pictures.dll
+C:\Dev\PicturesApp\SYW.App.Pictures\bin\SYW.App.Pictures.pdb
+C:\Dev\PicturesApp\SYW.App.Pictures\bin\EntityFramework.dll
+C:\Dev\PicturesApp\SYW.App.Pictures\bin\EntityFramework.xml
+C:\Dev\PicturesApp\SYW.App.Pictures\obj\Debug\SYW.App.Pictures.csprojResolveAssemblyReference.cache
+C:\Dev\PicturesApp\SYW.App.Pictures\obj\Debug\SYW.App.Pictures.dll
+C:\Dev\PicturesApp\SYW.App.Pictures\obj\Debug\SYW.App.Pictures.pdb
+C:\Dev\PicturesApp\SYW.App.Pictures\bin\CommonGround.dll
+C:\Dev\PicturesApp\SYW.App.Pictures\bin\Castle.Windsor.dll
+C:\Dev\PicturesApp\SYW.App.Pictures\bin\Castle.Core.dll
+C:\Dev\PicturesApp\SYW.App.Pictures\bin\log4net.dll
+C:\Dev\PicturesApp\SYW.App.Pictures\bin\Castle.Facilities.Logging.dll
+C:\Dev\PicturesApp\SYW.App.Pictures\bin\log4net.xml
+C:\Dev\PicturesApp\SYW.App.Pictures\bin\Castle.Facilities.Logging.xml
