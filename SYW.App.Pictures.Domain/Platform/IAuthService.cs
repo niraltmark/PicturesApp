@@ -2,7 +2,7 @@
 using System.Collections.Specialized;
 using CommonGround.Utilities;
 using HelloApps.Services;
-using SYW.App.Pictures.Domain.Services.Settings;
+using SYW.App.Pictures.Domain.Settings;
 
 namespace SYW.App.Pictures.Domain.Services.Platform
 {

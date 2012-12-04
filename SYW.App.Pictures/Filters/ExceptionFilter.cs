@@ -4,7 +4,7 @@ using System.Web.Mvc;
 using Newtonsoft.Json;
 using SYW.App.Pictures.Domain;
 using SYW.App.Pictures.Domain.Services;
-using SYW.App.Pictures.Domain.Services.Settings;
+using SYW.App.Pictures.Domain.Settings;
 using log4net;
 
 namespace SYW.App.Pictures.Web.Filters

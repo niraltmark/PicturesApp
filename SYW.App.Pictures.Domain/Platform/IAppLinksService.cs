@@ -2,7 +2,7 @@
 using HelloApps.Services;
 using MongoDB.Bson;
 using SYW.App.Pictures.Domain.DataAccess.Entities;
-using SYW.App.Pictures.Domain.Services.Settings;
+using SYW.App.Pictures.Domain.Settings;
 using log4net;
 
 namespace SYW.App.Pictures.Domain.Services.Platform

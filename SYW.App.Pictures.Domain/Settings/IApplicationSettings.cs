@@ -1,13 +1,13 @@
 ﻿using CommonGround.Settings;
 
-namespace SYW.App.Pictures.Domain.Services.Settings
+namespace SYW.App.Pictures.Domain.Settings
 {
     public interface IApplicationSettings
     {
-		[Default("0734E51010E94f5d8260366743FBCA9C")]
+		[Default("f6c0df3aaa854e4d98ef36bee80ffcd7")]
         string AppSecret { get; set; }
 
-        [Default("1000")]
+        [Default("1725")]
         long AppId { get; set; }
 
         [Default("applinks")]

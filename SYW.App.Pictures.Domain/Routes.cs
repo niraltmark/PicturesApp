@@ -1,4 +1,4 @@
-﻿using SYW.App.Pictures.Domain.Services.Settings;
+﻿using SYW.App.Pictures.Domain.Settings;
 
 namespace SYW.App.Pictures.Domain
 {

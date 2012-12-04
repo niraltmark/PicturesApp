@@ -32,7 +32,7 @@ namespace SYW.App.Pictures.Domain.Installer
 
 			_logger.Debug("App installed");
 
-			_appLinksService.Register("Messages", _routes.DefaultAppUrl);
+			_appLinksService.Register("Pictures", _routes.DefaultAppUrl);
 
 			_logger.Debug("App registered");
 		}

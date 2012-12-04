@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using HelloApps.Services;
 using Newtonsoft.Json;
-using SYW.App.Pictures.Domain.Services.Settings;
+using SYW.App.Pictures.Domain.Settings;
 using log4net;
 
 namespace SYW.App.Pictures.Domain.Services.Platform
