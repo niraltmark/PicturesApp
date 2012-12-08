@@ -126,6 +126,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="stylesheets\ie.css" />
+    <Content Include="stylesheets\print.css" />
+    <Content Include="stylesheets\screen.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -153,6 +156,14 @@
       <Project>{BDC1908B-D438-4852-8106-5C9792D5424C}</Project>
       <Name>SYW.App.Pictures.Domain</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\HomePage\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sass\ie.scss" />
+    <None Include="sass\print.scss" />
+    <None Include="sass\screen.scss" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

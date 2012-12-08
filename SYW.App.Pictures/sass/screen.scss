@@ -1,0 +1,79 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "susy";
+
+$total-columns: 12;
+$column-width: 6.844em; 
+$gutter-width: 0.313em; 
+$grid-padding: 0.313em;
+
+
+$break: 12;
+
+// $container-style: fluid;			// http://susy.oddbird.net/demos/grid-types/#de
+
+$media-layout-4-large: 	76em 86em; 	// 4 columns small
+$media-layout-4-medium:	64em 76em; 	// 4 columns small
+$media-layout-4-small: 	59em 64em; 	// 4 columns small
+$media-layout-2-large: 	48em 59em;	// 2 columns large
+$media-layout-2-medium:	31em 48em;	// 2 columns medium
+$media-layout-2-small: 	30em; 		// 2 columns small
+
+.page
+{
+	@include container;
+	// @include susy-grid-background;
+
+	#main
+	{
+		.grid
+		{
+			.block 
+			{
+				@include span-columns(6,12);
+				@include at-breakpoint(0em 59em) {
+					@include span-columns(12,12);
+				}
+				&:nth-child(odd) { margin-left: 0% }
+				&:nth-child(even) { margin-right: 0% }
+				.panel 
+				{
+					overflow:hidden;
+					margin-bottom: 0.313em; 
+					&.small {
+						height:190px;
+						@include span-columns(3,6);
+						@include at-breakpoint($media-layout-4-large) {
+							height: 157px;
+						}
+						@include at-breakpoint($media-layout-4-medium) {
+							height: 136px;
+						}
+						@include at-breakpoint($media-layout-4-small) {
+							height: 132px;
+						}
+					}
+					&.large {
+						height: 380px;
+						@include span-columns(6,6);
+						@include at-breakpoint($media-layout-4-large) {
+							height: 318px;
+						}
+						@include at-breakpoint($media-layout-4-medium) {
+							height: 274px;
+						}
+						@include at-breakpoint($media-layout-4-small) {
+							height: 266px;
+						}
+					}
+					&:nth-child(odd) { margin-left: 0%;  }
+					&:nth-child(even) { margin-right: 0%;  }
+				}
+			}
+		}
+	}
+}

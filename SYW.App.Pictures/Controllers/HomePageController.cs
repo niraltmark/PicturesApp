@@ -18,7 +18,7 @@ namespace SYW.App.Pictures.Controllers
 		[PatternRoute("/")]
 		public ActionResult Index()
 		{
-			return Content("Welcome to my products and I");
+			return View();
 		}
 
 		[IgnoreAutoLogin]

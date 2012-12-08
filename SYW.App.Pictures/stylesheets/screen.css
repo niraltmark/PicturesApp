@@ -1,0 +1,173 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../utils/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../utils/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../utils/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../utils/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../utils/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../utils/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../utils/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../utils/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../utils/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 27, ../sass/screen.scss */
+.page {
+  *zoom: 1;
+  max-width: 85.571em;
+  _width: 85.571em;
+  padding-left: 0.313em;
+  padding-right: 0.313em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 38, ../../../../utils/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.page:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 36, ../sass/screen.scss */
+.page #main .grid .block {
+  width: 49.81711%;
+  float: left;
+  margin-right: 0.36578%;
+  display: inline;
+}
+@media (min-width: 0em) and (max-width: 59em) {
+  /* line 36, ../sass/screen.scss */
+  .page #main .grid .block {
+    width: 100%;
+    float: left;
+    margin-right: 0.36578%;
+  }
+}
+/* line 41, ../sass/screen.scss */
+.page #main .grid .block:nth-child(odd) {
+  margin-left: 0%;
+}
+/* line 42, ../sass/screen.scss */
+.page #main .grid .block:nth-child(even) {
+  margin-right: 0%;
+}
+/* line 44, ../sass/screen.scss */
+.page #main .grid .block .panel {
+  overflow: hidden;
+  margin-bottom: 0.313em;
+}
+/* line 47, ../sass/screen.scss */
+.page #main .grid .block .panel.small {
+  height: 190px;
+  width: 49.63288%;
+  float: left;
+  margin-right: 0.73424%;
+  display: inline;
+}
+@media (min-width: 76em) and (max-width: 86em) {
+  /* line 47, ../sass/screen.scss */
+  .page #main .grid .block .panel.small {
+    height: 157px;
+  }
+}
+@media (min-width: 64em) and (max-width: 76em) {
+  /* line 47, ../sass/screen.scss */
+  .page #main .grid .block .panel.small {
+    height: 136px;
+  }
+}
+@media (min-width: 59em) and (max-width: 64em) {
+  /* line 47, ../sass/screen.scss */
+  .page #main .grid .block .panel.small {
+    height: 132px;
+  }
+}
+/* line 60, ../sass/screen.scss */
+.page #main .grid .block .panel.large {
+  height: 380px;
+  width: 100%;
+  float: left;
+  margin-right: 0.73424%;
+  display: inline;
+}
+@media (min-width: 76em) and (max-width: 86em) {
+  /* line 60, ../sass/screen.scss */
+  .page #main .grid .block .panel.large {
+    height: 318px;
+  }
+}
+@media (min-width: 64em) and (max-width: 76em) {
+  /* line 60, ../sass/screen.scss */
+  .page #main .grid .block .panel.large {
+    height: 274px;
+  }
+}
+@media (min-width: 59em) and (max-width: 64em) {
+  /* line 60, ../sass/screen.scss */
+  .page #main .grid .block .panel.large {
+    height: 266px;
+  }
+}
+/* line 73, ../sass/screen.scss */
+.page #main .grid .block .panel:nth-child(odd) {
+  margin-left: 0%;
+}
+/* line 74, ../sass/screen.scss */
+.page #main .grid .block .panel:nth-child(even) {
+  margin-right: 0%;
+}
