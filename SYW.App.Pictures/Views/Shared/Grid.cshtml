@@ -1,0 +1,13 @@
+﻿@model SYW.App.Pictures.Models.Grid
+
+<section class="grid">
+	@foreach (var block in Model.Blocks)
+	{
+		<div class="block">
+			@foreach (var panel in block.Panels)
+			{
+				@Html.Partial("Panel", panel)
+			}
+		</div>
+	}
+</section>

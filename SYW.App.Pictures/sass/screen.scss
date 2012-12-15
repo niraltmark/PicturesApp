@@ -23,6 +23,8 @@ $media-layout-2-large: 	48em 59em;	// 2 columns large
 $media-layout-2-medium:	31em 48em;	// 2 columns medium
 $media-layout-2-small: 	30em; 		// 2 columns small
 
+$border-size: 5px;
+
 .page
 {
 	@include container;
@@ -43,12 +45,21 @@ $media-layout-2-small: 	30em; 		// 2 columns small
 				.panel 
 				{
 					overflow:hidden;
-					margin-bottom: 0.313em; 
+					margin-bottom: 0.313em;
+					.picture
+					{
+						border: $border-size solid gray;
+					}
 					&.small {
-						height:190px;
+						$picture-height: 190px;
+						height: $picture-height;
+						.picture { height:$picture-height - $border-size * 2; }
+
 						@include span-columns(3,6);
 						@include at-breakpoint($media-layout-4-large) {
-							height: 157px;
+							$media-layout-4-large-picture-height:157px;
+							height: $media-layout-4-large-picture-height;
+							.picture { height:$media-layout-4-large-picture-height - $border-size * 2; }
 						}
 						@include at-breakpoint($media-layout-4-medium) {
 							height: 136px;
@@ -58,7 +69,8 @@ $media-layout-2-small: 	30em; 		// 2 columns small
 						}
 					}
 					&.large {
-						height: 380px;
+						.picture { height:383px; }
+						height: 385px;
 						@include span-columns(6,6);
 						@include at-breakpoint($media-layout-4-large) {
 							height: 318px;

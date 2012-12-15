@@ -1,44 +1,7 @@
-﻿@{
+﻿@model SYW.App.Pictures.Models.PicturePageModel
+	   
+@{
 	ViewBag.Title = "title";
 }
 
-<section class="grid">
-	<div class="block">
-		<div class="panel large">
-			<img src="http://en.int.renault.tv/image/1/682/383/0/uploads/images/episodes/making-of-the-chocolate-clio2-1354813947.jpg" />
-		</div>
-	</div>
-	<div class="block">
-		<div class="panel small">
-			<img src="http://en.int.renault.tv/image/1/340/190/0/uploads/images/episodes/5decades-of-design-2000-1354727304.jpg"/>
-		</div>
-		<div class="panel small">
-			<img src="http://en.int.renault.tv/image/1/340/190/0/uploads/images/episodes/rules-of-attraction3-1354729547.jpg"/>
-		</div>
-		<div class="panel small">
-			<img src="http://en.int.renault.tv/image/1/340/190/0/uploads/images/episodes/rules-of-attraction3-1354729547.jpg"/>
-		</div>
-		<div class="panel small">
-			<img src="http://en.int.renault.tv/image/1/340/190/0/uploads/images/episodes/5decades-of-design-2000-1354727304.jpg"/>
-		</div>
-	</div>
-	<div class="block">
-		<div class="panel small">
-			<img src="http://en.int.renault.tv/image/1/340/190/0/uploads/images/episodes/rules-of-attraction3-1354729547.jpg"/>
-		</div>
-		<div class="panel small">
-			<img src="http://en.int.renault.tv/image/1/340/190/0/uploads/images/episodes/5decades-of-design-2000-1354727304.jpg"/>
-		</div>
-		<div class="panel small">
-			<img src="http://en.int.renault.tv/image/1/340/190/0/uploads/images/episodes/rules-of-attraction3-1354729547.jpg"/>
-		</div>
-		<div class="panel small">
-			<img src="http://en.int.renault.tv/image/1/340/190/0/uploads/images/episodes/5decades-of-design-2000-1354727304.jpg"/>
-		</div>
-	</div>
-	<div class="block">
-		<div class="panel large">
-			<img src="http://en.int.renault.tv/image/1/682/383/0/uploads/images/episodes/making-of-the-chocolate-clio2-1354813947.jpg" />
-		</div>
-	</div>
-</section>
+@Html.Partial("Grid", Model.Grid)

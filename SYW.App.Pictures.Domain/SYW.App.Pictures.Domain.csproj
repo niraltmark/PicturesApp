@@ -65,11 +65,13 @@
     <Compile Include="DataAccess\Entities\EntitiesRepository.cs" />
     <Compile Include="DataAccess\Entities\EntitiesRepositoryExtensions.cs" />
     <Compile Include="DataAccess\Entities\EntityNetworkRepository.cs" />
+    <Compile Include="DataAccess\PicuturesRespository.cs" />
     <Compile Include="Entities\EntitiesInitializer.cs" />
     <Compile Include="Entities\EntitiesResolver.cs" />
     <Compile Include="Entities\Entity.cs" />
     <Compile Include="Entities\EntityNetwork.cs" />
     <Compile Include="Entities\EntityProvider.cs" />
+    <Compile Include="Entities\Picture.cs" />
     <Compile Include="EnumerableExtensions.cs" />
     <Compile Include="Installer\AppInstaller.cs" />
     <Compile Include="Installer\IAppInstallerSettings.cs" />
